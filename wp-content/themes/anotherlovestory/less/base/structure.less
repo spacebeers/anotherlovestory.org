@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    margin-top: 30px;
+}
+
+body {
+    background-color: @body-bg-color;
+    font-family: @body-font;
+    color: @body-font-color;
+    font-size: @body-font-size;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 2.5;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+    width: 95%;
+    margin: 30px auto;
+    @media (min-width: @site-max-width) {
+        width: @site-max-width;
+        max-width: @site-max-width;
+    }
+
+    &.menu-open {
+        overflow: hidden;
+    }
+}
+
+body > div:first-child {
+    @media (min-width: @screen-md) {
+        position: relative;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+.content {
+    position: relative;
+    border: 1px solid @outline-color;
+}
+
+.archive .content {
+    border: none;
+}
+
+.col--sm-5 + .col--sm-5 {
+    @media (max-width: 543px) {
+        padding-top: 0;
+    }
+}
+
+.head-content {
+    width: 80%;
+    @media (min-width: @screen-md) {
+        width: 50%;
+    }
+    margin: 0 auto 20px auto;
+
+    a {
+        display: inline !important;
+    }
+}
+
+.home {
+    .content {
+        border: none;
+    }
+}
+
+.padded-page {
+    padding: 20px;
+
+    @media (min-width: @screen-md-min) {
+        padding: 30px 70px;
+    }
+    @media (min-width: @screen-md-min) {
+        padding: 40px 100px;
+    }
+
+    header {
+        border-bottom: 1px solid @outline-color;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+.constrain {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 50px !important;
+}
+
+.slick-dots {
+    bottom: -35px !important;
+}
+
+.design-page {
+    .square {
+        img {
+            object-fit: cover;
+        }
+    }
+}

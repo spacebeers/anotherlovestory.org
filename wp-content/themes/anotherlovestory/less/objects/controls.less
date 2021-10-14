@@ -1,0 +1,163 @@
+button, .btn {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: @body-font-size;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+
+    &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+        color: @palette-lightest;
+    }
+}
+
+.btn-primary {
+    padding: 15px;
+    text-align: center;
+    background: @highlight;
+    color: @palette-lightest;
+    text-transform: uppercase;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn--xs-block {
+    @media (max-width: @screen-xs-max) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.btn--sm-block {
+    @media (max-width: @screen-sm-max) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.btn--md-block {
+    @media (max-width: @screen-md-max) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.btn--lg-block {
+    @media (max-width: @screen-lg-max) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.wpforms-field {
+    input, textarea {
+        text-align: left !important;
+        font-size: @large-font-size !important;
+        font-family: @body-font !important;
+        resize: none;
+        border: 1px solid @divider-color !important;
+    }
+
+    label {
+        display: block !important;
+        text-transform: uppercase !important;
+        font-size: @body-font-size !important;
+    }
+}
+
+.wpforms-field-limit-text {
+    font-size: @large-font-size !important;
+    font-family: @body-font !important;
+}
+
+.wpforms-required-label {
+    color: @primary !important;
+}
+
+.wpforms-submit {
+    width: 100% !important;
+    display: block !important;
+    background: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none !important;
+    cursor: pointer !important;
+    font-size: @body-font-size !important;
+    opacity: 1 !important;
+    transition: opacity 0.2s linear !important;
+    padding: 15px !important;
+    text-align: center !important;
+    background: @highlight !important;
+    color: @palette-lightest !important;
+    text-transform: uppercase !important;
+
+    &:hover {
+        text-decoration: none !important;
+        opacity: 0.8 !important;
+        color: @palette-lightest !important;
+    }
+}
+
+#wpforms-63-field_7-container, #wpforms-63-field_6-container, #wpforms-63-field_5-container {
+    display: none;
+}
+
+select {
+    appearance: none !important;
+    border: 1px solid @border-color !important;
+    padding: 9px 25px 9px 9px !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    background-image: url(./assets/arrows.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 97% !important;
+    background-size: 9px !important;
+    font-size: @body-font-size !important;
+    font-family: @body-font !important;
+}
+
+select::-ms-expand {
+    display: none; /* hide the default arrow in ie10 and ie11 */
+}
+
+.modal {
+    max-width: 750px !important;
+    border-radius: 0 !important;
+}
+
+.modal a.close-modal {
+    top: 10px !important;
+    right: 10px !important;
+    width: 10px !important;
+    height: 10px !important;
+    color: @primary !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    text-indent: 0 !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.form-header {
+    text-align: center;
+    padding: 30px;
+}
+
+.wpforms-confirmation-container-full {
+    font-size: @body-font-size !important;
+    color: @primary !important;
+    padding: 0 !important;
+    border: none !important;
+    background-color: transparent !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+}

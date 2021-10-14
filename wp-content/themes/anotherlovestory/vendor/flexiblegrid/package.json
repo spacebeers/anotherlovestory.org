@@ -1,0 +1,63 @@
+{
+  "_from": "flexiblegrid",
+  "_id": "flexiblegrid@1.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-rqDkHJBIwb4avOIm4PioX8hY7E/QUm9ohF3SCHwVta5ubZzuFKD6n7dCRTlg5ZS1s4LjAy9hKHTaExbTgIKezA==",
+  "_location": "/flexiblegrid",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "flexiblegrid",
+    "name": "flexiblegrid",
+    "escapedName": "flexiblegrid",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/flexiblegrid/-/flexiblegrid-1.2.2.tgz",
+  "_shasum": "ed05e5ae0e94378547194555634cec154a0b51fb",
+  "_spec": "flexiblegrid",
+  "_where": "/usr/local/var/www/anotherlovestory.co.uk/wp-content/themes/anotherlovestory",
+  "author": {
+    "name": "Kenan Gündoğan",
+    "email": "kenangundogann@gmail.com",
+    "url": "http://www.flexible-grid.com"
+  },
+  "bugs": {
+    "url": "https://github.com/kenangundogan/flexible-grid/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "For users who can embrace the newest of technology, Flexiblegrid comes with an flex based grid. It’s the same grid you know and love, but with even better source ordering and alignment options.",
+  "homepage": "http://www.flexible-grid.com",
+  "keywords": [
+    "flex",
+    "flexible",
+    "flexbox",
+    "flexgrid",
+    "grid",
+    "css",
+    "scss",
+    "sass",
+    "framework",
+    "flex-framework",
+    "responsive",
+    "html"
+  ],
+  "license": "MIT",
+  "main": "flexible-grid/src/sass/flexible-grid.scss",
+  "name": "flexiblegrid",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenangundogan/flexible-grid.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.2.2"
+}

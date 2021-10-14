@@ -1,0 +1,133 @@
+.product-details {
+    text-transform: uppercase;
+
+    .title-text {
+        margin-bottom: 0;
+    }
+
+    .subtitle {
+        display: block;
+        color: @palette-light;
+        font-size: 9px;        
+    }
+
+    ul {
+        list-style: none;
+        font-size: @med-font-size;
+    }
+
+    label {
+        font-size: @med-font-size;
+    }
+}
+
+.product-notes {
+    font-size: 9px;
+}
+
+.product-column {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-main {
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.product-details {
+    padding: 20px 28px 20px 20px;
+
+    @media (min-width: @screen-sm-min) {
+        padding: 40px 48px 40px 40px;
+    }
+
+    .btn-block {
+        margin-top: 38px;
+        font-size: @med-font-size;
+    }
+}
+.slick-prev {
+    left: 10px !important;
+    display: none !important;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 10px !important;
+    display: none !important;
+}
+
+.slick-slider:hover {
+    .slick-prev {
+        display: block !important;
+    }
+
+    .slick-next {
+        display: block !important;
+    }
+}
+
+.contain-image {
+    position: relative;
+    width: 100%;
+    background: transparent;
+
+    &::after {
+        content: "";
+        display: block;
+        padding-bottom: 75%;
+    }
+
+    .content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: none;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+
+.slick-prev, .slick-next {
+    display: block !important;
+}
+.slick-prev:before, .slick-next:before {
+    color: #b3adad !important;
+}
+
+.product-main {
+    .book {
+        .collections-grid {
+            width: 80%;
+            margin: 10%;
+        }
+    }
+}
+
+.divider {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border: none;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 20px;
+        height: 1px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: @border-color;
+    }
+}

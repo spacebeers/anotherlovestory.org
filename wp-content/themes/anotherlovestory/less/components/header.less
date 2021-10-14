@@ -1,0 +1,132 @@
+.site-header {
+    margin-bottom: @content-gap;
+    position: relative;
+
+    .logo {
+        margin-top: -30px;
+        @media (min-width: @screen-sm-min) {
+            margin-top: 0;
+        }
+    }
+}
+
+.nav-toogle img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+#mobile-menu {
+    display: block;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        font-size: 8px;
+        @media (min-width: @screen-sm-min) {
+            font-size: 10px;
+        }
+
+        li + li {
+            margin: 0 0 0 15px;
+            @media (min-width: @screen-sm-min) {
+                margin: 0 0 0 30px;
+            }
+        }
+
+        li + li {
+            position: relative;
+            &::before {
+                content: "|";
+                position: absolute;
+                top: 0;
+                left: -10px;
+                @media (min-width: @screen-sm-min) {
+                    left: -15px;
+                }
+
+            }
+        }
+    }
+}
+
+.site-logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 65%;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 20px;
+        height: 1px;
+        display: block;
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: @divider-color;
+    }
+
+    @media (min-width: @screen-sm-min) {
+        width: 40%;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        max-width: 306px;
+    }
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        text-transform: uppercase;
+
+        &::after {
+            content: "|";
+            margin: 0 5px;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &.active {
+            a {
+                color: @primary;
+            }
+        }
+    }
+}

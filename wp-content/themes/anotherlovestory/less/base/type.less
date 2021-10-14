@@ -1,0 +1,101 @@
+
+p {
+    margin: 0;
+}
+
+p + p {
+    margin: 15px 0 0 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: @large-font-size;
+}
+
+h2 {
+    font-size: @body-font-size;
+}
+
+.sub-title {
+    font-size: @med-font-size;
+    color: @palette-light;
+    text-transform: uppercase;
+}
+
+.lined-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        padding: 8px 0;
+        border-bottom: 1px solid @divider-color;
+    }
+}
+
+.underline {
+    position: relative;
+    margin-bottom: 15px;
+
+    &::after {
+        content: "";
+        width: 20px;
+        height: 1px;
+        display: block;
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: @divider-color;
+    }
+}
+
+strong + strong {
+    &::before {
+        content: ", ";
+    }
+}
+
+.more-link {
+    margin-top: 10px;
+    display: block;
+}
+
+a {
+    color: @body-font-color;
+    text-decoration: none;
+    transition: color @ani-speed linear;
+    &:hover {
+        text-decoration: underline;
+        opacity: 1;
+        color: @primary;
+    }
+}
+
+ul {
+    margin: 0 0 20px 0;
+    padding: 0 0 0 0;
+}
+
+p {
+    line-height: 2.4;
+}
+
+p + h2 {
+    margin: 10px 0 0 0;
+}
+
+ol {
+    margin: 0;
+    padding: 0 0 0 18px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}

@@ -1,0 +1,23 @@
+.large-black {
+  font-size: 1.0rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.large-grey {
+  font-size: 1.0rem;
+  color: #9d9d9c;
+  text-transform: uppercase;
+}
+
+.small-black {
+  font-size: 0.7rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.small-grey {
+  font-size: 0.7rem;
+  color: #9d9d9c;
+  text-transform: uppercase;
+}

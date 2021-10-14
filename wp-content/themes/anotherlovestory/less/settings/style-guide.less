@@ -1,0 +1,56 @@
+// Structure
+@site-max-width: 1300px;
+//grid media queries
+@screen-xs: 0px;
+@screen-sm: 768px;
+@screen-md: 1024px;
+@screen-lg: 1279px;
+@screen-xl: 1366px;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm-min:              @screen-sm;
+
+// Medium screen / desktop
+@screen-md-min:              @screen-md;
+
+// Large screen / wide desktop
+@screen-lg-min:              @screen-lg;
+
+// Xl screen / wide desktop
+@screen-xl-min:              @screen-xl;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+@screen-lg-max:              (@screen-xl-min - 1);
+
+
+// Palette
+@primary: #1A1919;
+@highlight: #964734;
+@palette-darkest: #000000;
+@palette-lightest: #DCDDDB;
+@palette-light: #9d9d9c;
+@body-bg-color: #FFFFFE;
+@body-font-color: #000000;
+@border-color: #f2f2f2;
+@outline-color: #f2f2f2;
+@divider-color: #e3e3e3;
+
+
+// Type
+@primary-font: 'Cantarell', sans-serif;
+@body-font: @primary-font;
+@large-font-size: 11px;
+@body-font-size: 10px;
+@med-font-size: 9px;
+@small-font-size: 8px;
+@extra-small-font-size: 7px;
+
+// Structure
+@content-gap: 20px;
+
+// Delighters
+@ani-speed: 0.2s;
